@@ -1,0 +1,97 @@
+.container {
+  padding-top: 30px;
+  display: flex;
+}
+.image {
+  padding-left: 30px;
+  width: 250px;
+}
+
+.info {
+  padding-left: 70px;
+  width: 500px;
+}
+
+.title {
+  font-size: 36px;
+  line-height: 1.17;
+}
+.infoTitle {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.2;
+}
+.additional {
+  padding-left: 30px;
+}
+.btn {
+  text-decoration: none;
+  display: inline-block;
+  margin: 10px;
+  color: black;
+  box-shadow: 0 0 0 2px white;
+  padding: 10px 0;
+  width: 100px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.btn:before,
+.btn:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+.btn:before {
+  transform: translateX(-100%);
+  background: white;
+  transition: transform 0.3s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.btn:after {
+  background: brown;
+  transform: translateX(100%);
+  transition: transform 0.3s cubic-bezier(0.16, 0.73, 0.58, 0.62) 0.3s;
+}
+.btn:hover:before,
+.btn:hover:after {
+  transform: translateX(0);
+}
+
+.btnAdditional {
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset;
+  transition: border 0.2s linear 0s, box-shadow 0.2s linear 0s;
+  border-radius: 4px;
+  color: #555555;
+  display: block;
+  width: 120px;
+  margin: 20px 0;
+  font-size: 14px;
+  text-align: center;
+  height: 20px;
+  line-height: 20px;
+  margin-bottom: 10px;
+  padding: 4px 6px;
+
+  text-decoration: none;
+}
+.btnAdditional:hover,
+.btnAdditional:focus {
+  border-color: brown;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px brown;
+  outline: 0 none;
+}
+.additionalList {
+  display: flex;
+}
+.additionalItem {
+  padding-left: 20px;
+}
